@@ -21,8 +21,8 @@ function App() {
     );
   }
 
-  /* This IF condition is to make sure devices that update coordinates every few seconds 
-  wont keep calling the getCurrentWeather function constantly, as this is probably not necessary. */
+  /* This IF condition is to make sure devices that update coordinates every few seconds will not
+   keep calling the getCurrentWeather function constantly, as this is probably not necessary. */
 
   if (!coordinates) {
     navigator.geolocation.getCurrentPosition(success, error);
