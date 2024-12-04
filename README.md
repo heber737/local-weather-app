@@ -1,8 +1,8 @@
-# Markdown Previewer
+# Local Weather App
 
 ## Project Description
 
-This app consist of a local weather app. You can use it to check the current weather in your area, as long as you have a geolocation service available in your device.
+This app consists of a local weather app. You can use it to check the current weather in your area, as long as you have a geolocation service available in your device.
 
 ## Technology Stack
 
@@ -14,6 +14,8 @@ This app consist of a local weather app. You can use it to check the current wea
 - Node Package Manager
 - Node.js
 - [Open Meteo](https://open-meteo.com/) API to retrieve the local weather data.
+
+Note: the data available at Open Meteo can be inexact for some remote areas. Do not rely on this app as a high precision weather forecast provider. You can also collaborate and update the weather data source.
 
 ## How to Install and Run this App
 
