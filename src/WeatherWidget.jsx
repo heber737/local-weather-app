@@ -15,11 +15,11 @@ function WeatherWidget({ currentWeather }) {
 
   if (currentWeather) {
     const {
+      is_day,
       time,
       temperature_2m: temp,
       relative_humidity_2m: humidity,
       apparent_temperature: feel,
-      is_day,
       weather_code: code,
     } = currentWeather.current;
 
@@ -85,7 +85,7 @@ function WeatherWidget({ currentWeather }) {
         <div id="time-wrapper">
           <p>Updated on {localTime}</p>
           <p className="smaller-text">
-            * The source is updated every 15 minutes. Refresh to get the latest
+            * Weather data is updated every 15 minutes. Refresh to get the latest
             available data.
           </p>
         </div>

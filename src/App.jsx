@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import WeatherWidget from "./WeatherWidget";
 
-const api = "https://api.open-meteo.com/v1/forecast";
+const API = "https://api.open-meteo.com/v1/forecast";
 
 function App() {
   const [coordinates, setCoordinates] = useState(null);
@@ -21,7 +21,8 @@ function App() {
     );
   }
 
-  /* This IF condition is to ensure that devices that update coordinates every few seconds wont keep calling the getCurrentWeather function constantly, as this is probably not necessary. */
+  /* This IF condition is to make sure devices that update coordinates every few seconds 
+  wont keep calling the getCurrentWeather function constantly, as this is probably not necessary. */
 
   if (!coordinates) {
     navigator.geolocation.getCurrentPosition(success, error);
@@ -31,7 +32,7 @@ function App() {
     async function getCurrentWeather() {
       try {
         const weather = await fetch(
-          api +
+          API +
             "?latitude=" +
             coordinates.latitude +
             "&longitude=" +
