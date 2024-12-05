@@ -15,7 +15,7 @@ This app consists of a local weather app. You can use it to check the current we
 - Node.js
 - [Open Meteo](https://open-meteo.com/) API to retrieve the local weather data.
 
-Note: the data available at Open Meteo can be inexact for some remote areas. Do not rely on this app as a high precision weather forecast provider. You can also collaborate and update the weather data source.
+Note: the data available at Open Meteo can be inexact for some remote areas. Do not rely on this app as a high precision weather forecast provider. You can also collaborate and improve the weather data source.
 
 ## How to Install and Run this App
 
